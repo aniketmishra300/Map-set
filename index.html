@@ -38,6 +38,25 @@
         e=2
         f=1
     </pre></h2>
+    <h3><pre>
+        let str = "abcadeecfb";
+        let abc = new Map();
+       
+        for(let ch of str) {
+        
+            if (abc.has(ch)) {
+             abc.set(ch, abc.get(ch)+1)
+          }
+
+            else {
+             abc.set(ch,1);
+          }
+           }
+
+        for(let [key,value] of abc) {
+             console.log(`${key}=${value}`);
+        }
+    </pre></h3>
     <script src="./script.js"></script>
 </body>
 </html>
